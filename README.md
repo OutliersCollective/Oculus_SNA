@@ -13,6 +13,7 @@ Running the demo
 For this demo to run on your browser you should download a WebVR-compatible browser, either Chromium (http://blog.tojicode.com/2014/07/bringing-vr-to-chrome.html) or Firefox (http://blog.bitops.com/blog/2014/06/26/first-steps-for-vr-on-the-web/)
 
 
+
 Further reading
 ===============
 
