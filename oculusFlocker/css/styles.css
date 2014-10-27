@@ -1,0 +1,45 @@
+body {
+  background:#fff;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+
+#container {
+  text-align: center;
+}
+
+#container canvas {
+  border: 1px solid black;
+}
+
+#info {
+  padding: 15px 50px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+#info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#info span {
+  font-weight: normal;
+  font-family: Fixed, monospace;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+svg
+{
+    visibility: hidden;
+}

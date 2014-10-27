@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__author__ = 'Oscar'
+__author__ = 'oscar@outliers.es'
 
 # Twitter lib used for user lookup + streaming: https://github.com/sixohsix/twitter [easy_install twitter]
 
@@ -16,14 +16,14 @@ import shutil
 # Go to http://dev.twitter.com and create an app.
 # The consumer key and secret will be generated for you after
 
-consumer_key = "wXvosKjENqoC3IKhGq6Mt49jb"
-consumer_secret = "TKe1kxqDGl6twUzToLA9KrlAqZAdZg9gp19h08arhM07D0kny8"
+# consumer_key = YOUR_CONSUMER_KEY
+# consumer_secret = YOUR_CONSUMER_SECRET
 
 # After the step above, you will be redirected to your app's page.
 # Create an access token under the the "Your access token" section
 
-access_token = "289284899-cWiIm01HhqHgAYMVm5zgDIbrSQ96lH6yUgCXgAQw"
-access_token_secret = "7J8aC4ma7OaPg9p3TjkBmLFOUZOjLyxX3QEstkgYvKDqN"
+# access_token = YOUR_ACCESS_TOKEN
+# access_token_secret = YOUR_TOKEN_SECRET
 
 TMP_FILE = "network.tmp.json"
 
@@ -57,7 +57,7 @@ def insert_tweet_in_network(tweet):
     target_user = tweet['user']['screen_name']
     target_followers = tweet['user']['followers_count']
 
-    print "INSERTANDO ENLACE de %s con followers %d a %s con followers %d" \
+    print "INSERTING edge from %s w/ follower count %d to %s w/ follower count %d" \
           % (source_user, source_followers, target_user, target_followers)
 
     # Insert nodes if they do not exist
@@ -96,7 +96,7 @@ class MyListener(StreamListener):
             if 'retweeted_status' in tweet:
                 insert_tweet_in_network(tweet)
         except:
-            print "*ERROR INESPERADO, AQUI LA TRAZA*"
+            print "*UNEXPECTED ERROR, TRACE DUMP HERE:*"
             traceback.print_exc()
 
         return True

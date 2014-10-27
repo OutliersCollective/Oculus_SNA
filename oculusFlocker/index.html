@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="info">
+      <h1></h1>
+      <button onclick="toggleFullscreen();">Toggle Fullscreen VR (f)</button>
+      <ul>
+        <li>Left Eye Offset: <span id="leftTranslation">-</span></li>
+        <li>Right Eye Offset: <span id="rightTranslation">-</span></li>
+        <li>Orientation: <span id="orientation">-</span></li>
+        <li>Position: <span id="position">-</span></li>
+        <li>AngularVelocity: <span id="angularVelocity">-</span></li>
+        <li>LinearVelocity: <span id="linearVelocity">-</span></li>
+        <li>AngularAcceleration: <span id="angularAcceleration">-</span></li>
+        <li>LinearAcceleration: <span id="linearAcceleration">-</span></li>
+      </ul>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="lib/three.js"></script>
+    <script src="lib/THREEx.KeyboardState.js"></script>
+    <script src="sna_aux.js"></script>
+    <script src="sna_main.js"></script>
+  </body>
+</html>
