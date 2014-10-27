@@ -16,14 +16,14 @@ import shutil
 # Go to http://dev.twitter.com and create an app.
 # The consumer key and secret will be generated for you after
 
-# consumer_key = YOUR_CONSUMER_KEY
-# consumer_secret = YOUR_CONSUMER_SECRET
+consumer_key = YOUR_CONSUMER_KEY
+consumer_secret = YOUR_CONSUMER_SECRET
 
 # After the step above, you will be redirected to your app's page.
 # Create an access token under the the "Your access token" section
 
-# access_token = YOUR_ACCESS_TOKEN
-# access_token_secret = YOUR_TOKEN_SECRET
+access_token = YOUR_ACCESS_TOKEN
+access_token_secret = YOUR_TOKEN_SECRET
 
 TMP_FILE = "network.tmp.json"
 
