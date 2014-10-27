@@ -3,7 +3,7 @@ Oculus_SNA
 
 A tool to explore 3D Twitter networks in real time w/ Oculus Rift. Mostly like http://flocker.outliers.es, but now you're **inside** the network.
 The network layout is calculated using d3.js force layout (https://github.com/mbostock/d3/wiki/Force-Layout) in a 'fake' hidden SVG element.
-Nodes are users and links are retweets. Node's height is proportional to the user number of followers, but you can use any metric you want changing the code.
+Nodes are users and links are retweets. Node's height is proportional to the user number of followers, but you can use any metric you want by changing the code.
 
 Please note that code in sna_aux.js is heavily based on this project [https://github.com/cemrich/early-webvr-demo
 ](https://github.com/cemrich/early-webvr-demo
